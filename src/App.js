@@ -4,8 +4,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faThumbsUp, faThumbsDown, faImage, faMoneyCheckAlt, faSearchDollar} from '@fortawesome/free-solid-svg-icons'
 
 class App extends Component {
-    state = { isLoading: false, items : [
-
+    state = { isLoading: false, items : []}
+/*
                 {
                     "id" :"100",
                     "Title":"sunglasses",
@@ -25,12 +25,19 @@ class App extends Component {
                     "Importance":"Must Have"
                 }
             ]
+            
     }
-
+*/
     removeItem(id){
         console.log(id)
         let updatedItems = [...this.state.items].filter(i => i.id !== id)
         this.setState ({items : updatedItems});
+    }
+    
+    async componentDidMount(){
+        const response = await fetch('https://fnruovbwsh.execute-api.ap-southeast-1.amazonaws.com/Dev');
+        const body = await response.json();
+        this.setState({items:body, isLoading: false}); 
     }
 
     //todo: setState
