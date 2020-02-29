@@ -204,7 +204,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless-service/dev/1582995254911-2020-02-29T16:54:14.911Z/serverless-service.zip"
+                "S3Key": "serverless/serverless-service/dev/1582999662421-2020-02-29T18:07:42.421Z/serverless-service.zip"
               },
               "FunctionName": "serverless-service-dev-hello",
               "Handler": "s_hello.handler",
@@ -223,14 +223,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "HelloLambdaVersionFxiwQeISV83bqWGy6WQ2NatzIQPZ0fWNPorl43N2g": {
+          "HelloLambdaVersionb1Zps4GYmE4Yq9Q7h6a9sAdHdtdaYtlQrfGw8LgmFYE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HelloLambdaFunction"
               },
-              "CodeSha256": "FIcjxKhgDmZRKnZ94Mc9w5OhrTQ37m2XK4owJlzVXwY="
+              "CodeSha256": "GUzVRujGVUIlbLbZj8V0tRDr4zz7EwTyf8D+G+bEwwk="
             }
           },
           "CloudWatchLogsSubscriptionFilterHelloLogGroup": {
@@ -261,7 +261,7 @@
           "HelloLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HelloLambdaVersionFxiwQeISV83bqWGy6WQ2NatzIQPZ0fWNPorl43N2g"
+              "Ref": "HelloLambdaVersionb1Zps4GYmE4Yq9Q7h6a9sAdHdtdaYtlQrfGw8LgmFYE"
             }
           }
         }
@@ -351,7 +351,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "HelloLambdaVersionFxiwQeISV83bqWGy6WQ2NatzIQPZ0fWNPorl43N2g"
+        "versionLogicalId": "HelloLambdaVersionb1Zps4GYmE4Yq9Q7h6a9sAdHdtdaYtlQrfGw8LgmFYE"
       }
     },
     "serviceFilename": "serverless.yml",
@@ -365,7 +365,7 @@
     "artifact": "/Users/jonathan/Documents/simplist/.serverless/serverless-service.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/serverless-service/dev/1582995254911-2020-02-29T16:54:14.911Z",
+    "artifactDirectoryName": "serverless/serverless-service/dev/1582999662421-2020-02-29T18:07:42.421Z",
     "artifact": "serverless-service.zip"
   }
 }
